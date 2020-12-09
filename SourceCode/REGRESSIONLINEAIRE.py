@@ -28,6 +28,11 @@ def predict(X):
    
 fitline=predict(X) 
 plt.plot(X, fitline, c='r') 
+plt.grid()
+plt.scatter(X,Y)
 
-
-print(predict(20))  
+#exemple de test : X=[0.25]
+print("entree un nombre entre 0 et 25 :")
+var = input("X= " )
+var2 =int(var)
+print("la valeur de Y pour F({}) est : {}".format(var2, predict(var2)))  
